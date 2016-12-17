@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Tirangle</title>
+		<style type="text/css">
+			
+			.border_test {
+				width: 260px;
+				height: 260px;
+				background: #ff8201;
+				position: relative;
+			}
+			
+			.border_test:after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				content: '';
+				width: 0;
+				height: 0;
+				border-top: 30px dashed #fff; /* 右上角是白色*/
+				border-left: 30px  dashed transparent; /* 左下角是透明 */
+			}
+		</style>
+	</head>
+	<body>
+		<div class="border_test"></div> <!--  class 命名不规范 -->
+	</body>
+	
+</html>
